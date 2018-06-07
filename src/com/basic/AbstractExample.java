@@ -5,17 +5,25 @@ public abstract class AbstractExample {
      {
     	 System.out.println("yeah that's good");
      }
+     public abstract void getCar();
 	public static void main(String[] args) {
-		//AbstractExample abi=new AbstractExample();
-          Nandhu nan=new Nandhu();
+		Nandhu nan=new Nandhu(16);
           nan.getThat();
+          nan.getCar();
 	}
 
 }
 class Nandhu extends AbstractExample{
+public void getCar() {
+		 System.out.println("i got that CAR");
+}
 	public void getThat()
 	{
 		
 		 System.out.println("i got that");
+	}
+	public Nandhu(int i) {
+		
+		System.out.println(i);
 	}
 }
