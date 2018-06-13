@@ -17,7 +17,6 @@ public class StringExample {
 		   ln=n.substring(mn.length()+fn.length(),aa);
 		   
 		}
-		//return new String[] {fn,mn,ln};
 		if(aa%3==1)
 		{
 			fn=n.substring(0,ab);
@@ -27,8 +26,8 @@ public class StringExample {
 		if(aa%3==2)
 		{
 			fn=n.substring(0,ab+1);
-			   mn=n.substring(fn.length());
-			   ln=n.substring(mn.length(),aa);
+			   mn=n.substring(fn.length(),3);
+			   ln=n.substring(mn.length()+2,aa);
 		}
 		return new String[] {fn,mn,ln};
 	}
@@ -45,15 +44,12 @@ public class StringExample {
 		System.out.println("enter values\n");
 		String s6=sc.next();
      	System.out.println(s6.length());
-     	//StringExample se=new StringExample();
-	//	se.exam(s4);
 		String n1[]=rexam(s4);
 		String n2[]=rexam(s5);
 		String n3[]=rexam(s6);
 		System.out.println(n1[0]+ n2[1]+ n3[2]);
 		System.out.println(n1[1] +  n2[2] + n3[0]);
 		System.out.println(n1[2] +  n2[0] + n3[1]);
-		//System.out.println(n1[1]);
-		//System.out.println(n1[2]);
+		
 				
 	}}
